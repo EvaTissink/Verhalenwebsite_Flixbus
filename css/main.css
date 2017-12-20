@@ -1,0 +1,105 @@
+/* __________________________ALGEMEEN__________________________ */
+
+body {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 0.7em;
+    color: #444;
+    line-height: 1.5em;
+    background-color: #FFF;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+main {
+    margin: auto;
+    max-width: 95%;
+    margin-top: 14em;
+}
+
+
+/* __________________________HEADER__________________________ */
+
+header {
+    background-color: #73d700;
+    color: #444;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+header img {
+    width: 9em;
+    margin: 0 1em 1em 1em;
+    display: block;
+     margin-left: 2.5%;
+    display: inline-block;
+    padding: 1.3em 0 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+}
+
+header > p {
+    display: inline-block;
+    font-size: 1.2em;
+    margin: 1em;
+    right: 0;
+    position: absolute;
+}
+
+
+/* __________________________KOPPEN__________________________ */
+
+h1 {
+    color: #444;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 300;
+    margin-left: .5em;
+}
+
+
+/* __________________________CONTENT__________________________ */
+
+main footer {
+    margin-left: 1em;
+}
+
+main article img {
+    width: 10em;
+}
+
+main article {
+    width: 12em;
+    display: inline-block;
+}
+
+main>section>div {
+    overflow-x: scroll;
+    display: flex;
+}
+
+div article {
+    padding: 0 .5em 0 .5em;
+}
