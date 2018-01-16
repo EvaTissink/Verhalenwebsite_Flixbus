@@ -13,14 +13,17 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="images/flixbus_logo.png" alt="Het logo van Flixbus"></a>
+        <h1><a href="index.html"><img src="images/flixbus_logo.png" alt="Het logo van Flixbus"></a></h1>
         <nav>
             <ul>
                 <li>
-                    <label for="zoekoptie"></label>
-                    <input id="zoekoptie" type="text">
-                    <button type="button" name="Zoek">Zoek</button>
+                    <!--<form action="#">
+                        <label for="zoekoptie"></label>
+                        <input id="zoekoptie" type="text">
+                        <button type="button" name="Zoek">Zoek</button>
+                    </form>-->
                 </li>
+                <li><a href="#">Zoeken</a></li>
                 <li><a href="#">Mijn verhalen</a></li>
                 <li><a href="/login.html">Inloggen</a></li>
             </ul>
@@ -29,11 +32,11 @@
 
     <main>
         <section>
-            <h1>Populair</h1>
+            <h2>Populair</h2>
             <div>
                 <article>
                     <img src="images/thumbnail-01.png" alt="Droom">
-                    <h2>Droom</h2>
+                    <h3>Droom</h3>
                     <footer>
                         <p>31</p>
                         <p>306</p>
@@ -42,7 +45,7 @@
 
                 <article>
                     <img src="images/thumbnail-02.png" alt="Dialoog">
-                    <h2>Dialoog</h2>
+                    <h3>Dialoog</h3>
                     <footer>
                         <p>16</p>
                         <p>97</p>
@@ -51,7 +54,7 @@
 
                 <article>
                     <img src="images/thumbnail-03.png" alt="Klumperbeven">
-                    <h2>Klumperbeven</h2>
+                    <h3>Klumperbeven</h3>
                     <footer>
                         <p>31</p>
                         <p>306</p>
@@ -61,64 +64,60 @@
         </section>
 
         <section>
-            <h1>Alle verhalen</h1>
+            <h2>Alle verhalen</h2>
 
-            <section>
-                <form action="#">
+            <form action="#">
+                <fieldset>
+                    <legend>Leestijd</legend>
+                    <div id="leestijd">
+                        <input type="range" min="1" max="4" value="1" class="slider" id="myRange">
+                    </div>
+                </fieldset>
 
-                    <fieldset>
-                        <legend>Leestijd</legend>
-                        <li>0-5 minuten</li>
-                        <li>5-10 minuten</li>
-                        <li>10-15 minuten</li>
-                        <li>Alles</li>
-                        <div id="slidecontainer">
-                            <input type="range" min="1" max="4" value="4" class="slider" id="myRange">
-                        </div>
-                    </fieldset>
+                <fieldset>
+                    <legend>Likes</legend>
+                    <input type="radio" name="sorteer" value="" checked> Alles
+                    <input type="radio" name="sorteer" value="other"> Meest - Minst
+                    <input type="radio" name="sorteer" value="other"> Minst - Meest
 
-                    <fieldset>
-                        <legend>Likes</legend>
-                        <input type="radio" name="sorteer" value="other"> Meest - Minst
-                        <input type="radio" name="sorteer" value="other"> Meest - Minst
-                    </fieldset>
+                </fieldset>
 
-                    <fieldset>
-                        <legend>Comments</legend>
-                        <input type="radio" name="sorteer" value="other"> Meest - Minst
-                        <input type="radio" name="sorteer" value="other"> Meest - Minst
-                    </fieldset>
+                <fieldset>
+                    <legend>Comments</legend>
+                    <input type="radio" name="sorteer1" value="" checked> Alles
+                    <input type="radio" name="sorteer1" value="other"> Meest - Minst
+                    <input type="radio" name="sorteer1" value="other"> Minst - Meest
 
-                </form>
-            </section>
-
-            <article>
-                <img src="images/thumbnail-02.png" alt="Droom">
-                <h2>Dialoog</h2>
-                <footer>
-                    <p>26</p>
-                    <p>101</p>
-                </footer>
-            </article>
-
-            <article>
-                <img src="images/thumbnail-03.png" alt="Klumperbeven">
-                <h2>Klumperbeven</h2>
-                <footer>
-                    <p>31</p>
-                    <p>306</p>
-                </footer>
-            </article>
-
-            <article>
-                <img src="images/thumbnail-01.png" alt="Droom">
-                <h2>Droom</h2>
-                <footer>
-                    <p>26</p>
-                    <p>101</p>
-                </footer>
-            </article>
+                </fieldset>
+            </form>
         </section>
+
+        <article>
+            <img src="images/thumbnail-02.png" alt="Droom">
+            <h3>Dialoog</h3>
+            <footer>
+                <p>26</p>
+                <p>101</p>
+            </footer>
+        </article>
+
+        <article>
+            <img src="images/thumbnail-03.png" alt="Klumperbeven">
+            <h3>Klumperbeven</h3>
+            <footer>
+                <p>31</p>
+                <p>306</p>
+            </footer>
+        </article>
+
+        <article>
+            <img src="images/thumbnail-01.png" alt="Droom">
+            <h3>Droom</h3>
+            <footer>
+                <p>26</p>
+                <p>101</p>
+            </footer>
+        </article>
     </main>
 
 

@@ -12,25 +12,26 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="images/flixbus_logo.png" alt="Het logo van Flixbus"></a>
+        <h1><a href="index.html"><img src="images/flixbus_logo.png" alt="Het logo van Flixbus"></a></h1>
         <nav>
             <ul>
                 <li>
-                    <form action="#">
+                    <!--<form action="#">
                         <label for="zoekoptie"></label>
                         <input id="zoekoptie" type="text">
                         <button type="button" name="Zoek">Zoek</button>
-                    </form>
+                    </form>-->
                 </li>
                 <li><a href="#">Mijn verhalen</a></li>
-                <li><a href="/aanmelden.html">Aanmelden</a></li>
+                <li><a href="#">Inloggen</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <form action="#">
             <fieldset>
-                <legend>Inloggen</legend>
+                <legend><h1>Inloggen</h1></legend>
                 <label for="email">Emailadres
                     <input id="email" type="email" placeholder="emailadres">
                 </label>
@@ -38,16 +39,36 @@
                     <input id="wachtwoord" type="password" placeholder="wachtwoord">
                 </label>
             </fieldset>
-            <button type="button" name="wachtwoordvergeten">Wachtwoord vergeten?</button>
+            <p>Wachtwoord vergeten?</p>
             <button type="button" name="login">Log in</button>
+        </form>
+
+        <form action="#">
+            <fieldset>
+                <legend><h1>Registreren</h1></legend>
+                <label for="voornaam">Voornaam
+                    <input id="voornaam" type="text" placeholder="voornaam">
+                </label>
+                <label for="achternaam">Achternaam
+                    <input id="achternaam" type="text" placeholder="achternaam">
+                </label>
+                <label for="email">Emailadres
+                    <input id="email" type="email" placeholder="emailadres">
+                </label>
+                <label for="wachtwoord">Wachtwoord
+                    <input id="wachtwoord" type="password" placeholder="kies een wachtwoord">
+                </label>
+                <label for="bevestigwachtwoord">Bevestig wachtwoord
+                    <input id="bevestigwachtwoord" type="password" placeholder="herhaal wachtwoord">
+                </label>
+            </fieldset>
+            <button type="button" name="registreer">Registreer</button>
         </form>
 
     </main>
 
     <footer>
-        <section>
-            <p>&copy; Eva Tissink 2017</p>
-        </section>
+        <p>&copy; Eva Tissink 2017</p>
     </footer>
 
 
