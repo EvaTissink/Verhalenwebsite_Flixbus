@@ -9,8 +9,11 @@ Deze site bestaat uit 3 (met de verhalen erbij 6) html bestanden. Verder staat i
 # Gemaakt met
 
 - Brackets
-- Liefde
+- Bloed
+- Zweet
+- Tranen
+- Maar toch met liefde
 
 # Schrijver
 
-Eva Tissink
+- Eva Tissink
