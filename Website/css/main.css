@@ -1,0 +1,236 @@
+
+
+body {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #444;
+    line-height: 1.5em;
+    background-color: #FFF;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+  color: #444;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+main {
+    margin: auto;
+    margin-top: 8em;
+}
+
+
+/* __________________________HEADER__________________________ */
+
+
+nav {
+    background-color: #73d700;
+    height: 6em;
+    width: 100%;
+    color: #444;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+}
+
+
+li a img {
+    width: 10em;
+}
+
+nav ul {
+  margin: 0 auto;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+body > header li {
+  margin: 2em 6em 0 0;
+}
+
+body > header li:first-child {
+  margin-right: auto;
+}
+
+body > header a {
+  font-size: 1.2em;
+  color: white;
+  font-weight: 500;
+}
+
+
+/* __________________________CAROUSEL__________________________ */
+
+section:first-of-type div:first-of-type {
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+section:first-of-type div h1 {
+  font-size: 2em;
+}
+
+section:first-of-type > div article {
+  background-color: white;
+  width: 80vw;
+  height: 42vh;
+  position: absolute;
+  border-radius: 0.5em;
+  border: 0.06em solid #73d700;
+
+  transition: 0.5s ease-in-out;
+}
+
+section:first-of-type div article:hover {
+  background-color: #8b8b8b;
+  color: white;
+  transition: 0.3s ease;
+}
+
+section:first-of-type > div article header h2 {
+  text-align: center;
+  margin-top: 5em;
+}
+
+/* section:first-of-type > div article header h2:hover {
+  color: white;
+  transition: 0.3s ease;
+} */
+
+section:first-of-type > div article header hr {
+  text-align: center;
+  border-top: 0.01em solid #444;
+  width: 10em;
+  margin-top: -0.5em;
+}
+
+/* section:first-of-type > div article header hr:hover {
+  border-top: 0.01em solid white;
+  transition: 0.3s ease;
+} */
+
+.bolletjes {
+    text-align: center;
+    position: relative;
+    margin-bottom: 5em;
+}
+
+.bol1,
+.bol2,
+.bol3,
+.bol4 {
+    cursor: pointer;
+    height: 0.8em;
+    width: 0.8em;
+    margin: 0 0.4em;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.bol1:hover,
+.bol2:hover,
+.bol3:hover,
+.bol4:hover {
+    background-color: #73d700;
+}
+
+.active {
+    background-color: #73d700;
+}
+
+.mySlides {
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+
+    transition: 0.3s ease;
+
+}
+
+.item2,
+.item3,
+.item4 {
+    opacity: 0;
+}
+
+.show {
+    opacity: 100;
+}
+
+.hide {
+    opacity: 0;
+}
+
+
+/* __________________________ALLE VERHALEN__________________________ */
+
+section:nth-of-type(2) {
+  width: 80vw;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+section:nth-of-type(2) > h1 {
+  font-size: 2em;
+}
+
+section:nth-of-type(2) > article {
+  background-color: white;
+  width: 80vw;
+  height: 42vh;
+  position: relative;
+  border-radius: 0.5em;
+  border: 0.06em solid #c8c8c8;
+  margin-bottom: 2em;
+  transition: 0.3s ease;
+}
+
+section:nth-of-type(2) > article:hover {
+  background-color: #8b8b8b;
+  color: white;
+  transition: 0.3s ease;
+}
+
+section:nth-of-type(2) > article header h2 {
+  text-align: center;
+  padding-top: 5em;
+}
+
+section:nth-of-type(2) > article header hr {
+  text-align: center;
+  border-top: 0.01em solid #444;
+  width: 12em;
+  margin-top: -0.5em;
+}
+
+/* __________________________FOOTER__________________________ */
+
+section:last-of-type > footer {
+  height: 5em;
+  width: 100%;
+  margin-top: 90em;
+  display: block;
+  background-color: #73d700;
+}
+
+section:last-of-type > footer h3 {
+  text-align: center;
+  padding-top: 1em;
+  font-weight: 400;
+  color: white;
+}
