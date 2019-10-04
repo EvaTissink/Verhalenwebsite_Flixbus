@@ -8,7 +8,7 @@ Deze site bestaat uit 3 (met de verhalen erbij 6) html bestanden. Verder staat i
 
 # Gemaakt met
 
-- Brackets
+- Atom
 - Bloed
 - Zweet
 - Tranen
